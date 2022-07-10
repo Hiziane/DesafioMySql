@@ -136,3 +136,27 @@ ORDER BY qtd_total DESC
 --------------------------------------------------------------------------------------------
 
 -- CRUD (insert, select, update, delete)
+
+
+INSERT INTO fornecedor (id, nome, ie) VALUES (null, "Juca da Silva", "123456");
+----------------------
+
+SELECT *
+FROM fornecedor
+WHERE nome ='Juca da Silva'
+
+---------------------
+
+UPDATE fornecedor
+SET ie = '987654'
+WHERE nome ='Juca da Silva'
+
+---------------------
+
+DELETE 
+FROM fornecedor
+WHERE nome ='Juca da Silva'
+
+---------------------
+
+INSERT INTO fornecedor (id, nome, ie) VALUES (null, "Maria Joaquina", "111254");
